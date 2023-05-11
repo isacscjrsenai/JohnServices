@@ -1,0 +1,110 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0-windows7.0": {
+      "JohnService.BO/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "JohnService.VO": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/JohnService.BO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JohnService.BO.dll": {}
+        }
+      },
+      "JohnService.VO/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/JohnService.VO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JohnService.VO.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "JohnService.BO/1.0.0": {
+      "type": "project",
+      "path": "../JohnService.BO/JohnService.BO.csproj",
+      "msbuildProject": "../JohnService.BO/JohnService.BO.csproj"
+    },
+    "JohnService.VO/1.0.0": {
+      "type": "project",
+      "path": "../JohnService.VO/JohnService.VO.csproj",
+      "msbuildProject": "../JohnService.VO/JohnService.VO.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0-windows7.0": [
+      "JohnService.BO >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\ALUNO\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\ALUNO\\source\\repos\\JohnService\\JohnService.View\\JohnService.View.csproj",
+      "projectName": "JohnService.View",
+      "projectPath": "C:\\Users\\ALUNO\\source\\repos\\JohnService\\JohnService.View\\JohnService.View.csproj",
+      "packagesPath": "C:\\Users\\ALUNO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ALUNO\\source\\repos\\JohnService\\JohnService.View\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\ALUNO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0-windows",
+          "projectReferences": {
+            "C:\\Users\\ALUNO\\source\\repos\\JohnService\\JohnService.BO\\JohnService.BO.csproj": {
+              "projectPath": "C:\\Users\\ALUNO\\source\\repos\\JohnService\\JohnService.BO\\JohnService.BO.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0-windows7.0": {
+        "targetAlias": "net7.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

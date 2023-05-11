@@ -1,0 +1,9 @@
+C:\Users\ALUNO\source\repos\JohnService\JohnService.BO\bin\Debug\JohnService.BO.dll
+C:\Users\ALUNO\source\repos\JohnService\JohnService.BO\bin\Debug\JohnService.BO.pdb
+C:\Users\ALUNO\source\repos\JohnService\JohnService.BO\bin\Debug\JohnService.VO.dll
+C:\Users\ALUNO\source\repos\JohnService\JohnService.BO\bin\Debug\JohnService.VO.pdb
+C:\Users\ALUNO\source\repos\JohnService\JohnService.BO\obj\Debug\JohnService.BO.csproj.AssemblyReference.cache
+C:\Users\ALUNO\source\repos\JohnService\JohnService.BO\obj\Debug\JohnService.BO.csproj.CoreCompileInputs.cache
+C:\Users\ALUNO\source\repos\JohnService\JohnService.BO\obj\Debug\JohnService.BO.csproj.CopyComplete
+C:\Users\ALUNO\source\repos\JohnService\JohnService.BO\obj\Debug\JohnService.BO.dll
+C:\Users\ALUNO\source\repos\JohnService\JohnService.BO\obj\Debug\JohnService.BO.pdb
