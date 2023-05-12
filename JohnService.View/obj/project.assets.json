@@ -43,19 +43,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ALUNO\\.nuget\\packages\\": {}
+    "C:\\Users\\isacs\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ALUNO\\source\\repos\\JohnService\\JohnService.View\\JohnService.View.csproj",
+      "projectUniqueName": "C:\\Users\\isacs\\Source\\Repos\\isacscjrsenai\\JohnServices\\JohnService.View\\JohnService.View.csproj",
       "projectName": "JohnService.View",
-      "projectPath": "C:\\Users\\ALUNO\\source\\repos\\JohnService\\JohnService.View\\JohnService.View.csproj",
-      "packagesPath": "C:\\Users\\ALUNO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ALUNO\\source\\repos\\JohnService\\JohnService.View\\obj\\",
+      "projectPath": "C:\\Users\\isacs\\Source\\Repos\\isacscjrsenai\\JohnServices\\JohnService.View\\JohnService.View.csproj",
+      "packagesPath": "C:\\Users\\isacs\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\isacs\\Source\\Repos\\isacscjrsenai\\JohnServices\\JohnService.View\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ALUNO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\isacs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,14 +68,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\ALUNO\\source\\repos\\JohnService\\JohnService.BO\\JohnService.BO.csproj": {
-              "projectPath": "C:\\Users\\ALUNO\\source\\repos\\JohnService\\JohnService.BO\\JohnService.BO.csproj"
+            "C:\\Users\\isacs\\Source\\Repos\\isacscjrsenai\\JohnServices\\JohnService.BO\\JohnService.BO.csproj": {
+              "projectPath": "C:\\Users\\isacs\\Source\\Repos\\isacscjrsenai\\JohnServices\\JohnService.BO\\JohnService.BO.csproj"
             }
           }
         }

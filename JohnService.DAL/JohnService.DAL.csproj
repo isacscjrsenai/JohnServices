@@ -44,5 +44,15 @@
     <Compile Include="Connection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JohnService.BO\JohnService.BO.csproj">
+      <Project>{f3abde9e-99ed-4aa1-a697-f96d9f7339a6}</Project>
+      <Name>JohnService.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JohnService.VO\JohnService.VO.csproj">
+      <Project>{36026f2a-4508-4569-ab2e-54a5da4f0196}</Project>
+      <Name>JohnService.VO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

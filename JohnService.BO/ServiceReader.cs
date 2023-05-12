@@ -3,54 +3,82 @@ using System.Collections.Generic;
 using System.Linq;
 using System.IO;
 using JohnService.VO;
+using System.Runtime.CompilerServices;
+using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace JohnService.BO
 {
-    public class ServiceReader
+    public static class ServiceReader
     {
-        Dictionary<string, string> OrdemDeServico = new Dictionary<string, string>();
-        public Services ServiceRequest;
+        static Dictionary<string, string> OrdemDeServico = new Dictionary<string, string>();
+        public static Services ServiceRequest = new Services(null);
         //lendo o arquivo
-        List<string> linhas = File.ReadAllLines("solicitacao.txt", System.Text.Encoding.UTF8).ToList();
+        static List<string> linhas = File.ReadAllLines("solicitacao.txt", System.Text.Encoding.UTF8).ToList();
         //removendo as linhas em branco e só com espaço
-        public ServiceReader()
+        public static void ReadServiceOrder()
         {
             linhas.RemoveAll(linha => string.IsNullOrWhiteSpace(linha));
+            
             //se não existe linha com o header OS cria a linha
             if (!(linhas[0].Contains("OS") || linhas[0].ToLower().Contains("ordem de serviço") || linhas[0].ToLower().Contains("ordem de servico")))
             {
-                linhas.Insert(0, "Ordem de Serviço");
+                linhas.Insert(0, "Ordem de Serviço:");
             }
 
+            string pattern = ".*:$"; //texto que acaba com ":"
             for (var i = 0; i <= linhas.Count - 2; i += 2)
             {
-                Console.WriteLine(linhas[i]);
-                if (OrdemDeServico.ContainsKey(linhas[i]))
+                string chave = linhas[i].Trim();
+                chave = chave.Remove(chave.Length - 1);
+                TextInfo textInfo = new CultureInfo("pt-BR", false).TextInfo;
+                chave = textInfo.ToTitleCase(chave);
+
+                string valor = linhas[i + 1].Trim();
+                string proxLinha ="";
+                if( i <= linhas.Count - 3)
                 {
-                    OrdemDeServico.Add(linhas[i] + " Solicitante", linhas[i + 1].Trim());
+                   proxLinha = linhas[i + 2].Trim();
                 }
-                else
+                
+
+                while (!Regex.IsMatch(proxLinha, pattern)) 
                 {
-                    if (linhas[i].Trim().ToLower().Equals("serviço:"))
+                    valor += "\n" + proxLinha;
+                    i++;
+                    if (i <= linhas.Count - 3)
                     {
-                        OrdemDeServico.Add(linhas[i].Trim(), linhas[i + 1].Trim() + "\n" + linhas[i + 2]);
-                        i++;
+                        proxLinha = linhas[i + 2].Trim();
                     }
-                    if (linhas[i].Trim().ToLower().Equals("problema:"))
-                    {
-                        string problema = linhas[i + 1].Trim();
-                        problema = problema.Split("RESIDÊNCIA OU CAPITALIZAÇÃO /".ToCharArray())[1].Trim();
-                        OrdemDeServico.Add(linhas[i].Trim(), problema);
-                    }
-                    else
-                    {
-                        OrdemDeServico.Add(linhas[i], linhas[i + 1].Trim());
-                    }
+                    else break;
                 }
+
+                if (Regex.IsMatch(valor, pattern)) 
+                {
+                    valor = "";
+                    i--;
+                }
+
+                if (OrdemDeServico.ContainsKey(chave))
+                {
+                    chave += " do Solicitante";
+                }
+                if (chave.Equals("Problema"))
+                {
+                    string problema = valor;
+                    problema = problema.Split("RESIDÊNCIA OU CAPITALIZAÇÃO /".ToCharArray())[1].Trim();
+                    valor = problema;
+                }
+                
+                
+                OrdemDeServico.Add(chave, valor);
+                
+                
             }
 
             ServiceRequest = new Services(OrdemDeServico);
         }
+        
         
     }
 }

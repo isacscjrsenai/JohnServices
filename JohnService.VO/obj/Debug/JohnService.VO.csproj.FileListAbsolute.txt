@@ -4,3 +4,9 @@ C:\Users\ALUNO\source\repos\JohnService\JohnService.VO\obj\Debug\JohnService.VO.
 C:\Users\ALUNO\source\repos\JohnService\JohnService.VO\obj\Debug\JohnService.VO.csproj.CoreCompileInputs.cache
 C:\Users\ALUNO\source\repos\JohnService\JohnService.VO\obj\Debug\JohnService.VO.dll
 C:\Users\ALUNO\source\repos\JohnService\JohnService.VO\obj\Debug\JohnService.VO.pdb
+C:\Users\isacs\Source\Repos\isacscjrsenai\JohnServices\JohnService.VO\bin\Debug\JohnService.VO.dll
+C:\Users\isacs\Source\Repos\isacscjrsenai\JohnServices\JohnService.VO\bin\Debug\JohnService.VO.pdb
+C:\Users\isacs\Source\Repos\isacscjrsenai\JohnServices\JohnService.VO\obj\Debug\JohnService.VO.csproj.AssemblyReference.cache
+C:\Users\isacs\Source\Repos\isacscjrsenai\JohnServices\JohnService.VO\obj\Debug\JohnService.VO.csproj.CoreCompileInputs.cache
+C:\Users\isacs\Source\Repos\isacscjrsenai\JohnServices\JohnService.VO\obj\Debug\JohnService.VO.dll
+C:\Users\isacs\Source\Repos\isacscjrsenai\JohnServices\JohnService.VO\obj\Debug\JohnService.VO.pdb

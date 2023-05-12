@@ -1,0 +1,6 @@
+C:\Users\isacs\Source\Repos\isacscjrsenai\JohnServices\JohnService.DAL\bin\Debug\JohnService.DAL.dll
+C:\Users\isacs\Source\Repos\isacscjrsenai\JohnServices\JohnService.DAL\bin\Debug\JohnService.DAL.pdb
+C:\Users\isacs\Source\Repos\isacscjrsenai\JohnServices\JohnService.DAL\obj\Debug\JohnService.DAL.csproj.AssemblyReference.cache
+C:\Users\isacs\Source\Repos\isacscjrsenai\JohnServices\JohnService.DAL\obj\Debug\JohnService.DAL.csproj.CoreCompileInputs.cache
+C:\Users\isacs\Source\Repos\isacscjrsenai\JohnServices\JohnService.DAL\obj\Debug\JohnService.DAL.dll
+C:\Users\isacs\Source\Repos\isacscjrsenai\JohnServices\JohnService.DAL\obj\Debug\JohnService.DAL.pdb
