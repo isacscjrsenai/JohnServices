@@ -1,19 +1,19 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\isacs\\Source\\Repos\\isacscjrsenai\\JohnServices\\JohnService.View\\JohnService.View.csproj": {}
+    "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.View\\JohnService.View.csproj": {}
   },
   "projects": {
-    "C:\\Users\\isacs\\Source\\Repos\\isacscjrsenai\\JohnServices\\JohnService.BO\\JohnService.BO.csproj": {
+    "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.BO\\JohnService.BO.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\isacs\\Source\\Repos\\isacscjrsenai\\JohnServices\\JohnService.BO\\JohnService.BO.csproj",
+        "projectUniqueName": "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.BO\\JohnService.BO.csproj",
         "projectName": "JohnService.BO",
-        "projectPath": "C:\\Users\\isacs\\Source\\Repos\\isacscjrsenai\\JohnServices\\JohnService.BO\\JohnService.BO.csproj",
+        "projectPath": "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.BO\\JohnService.BO.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\isacs\\Source\\Repos\\isacscjrsenai\\JohnServices\\JohnService.VO\\JohnService.VO.csproj": {
-                "projectPath": "C:\\Users\\isacs\\Source\\Repos\\isacscjrsenai\\JohnServices\\JohnService.VO\\JohnService.VO.csproj"
+              "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.VO\\JohnService.VO.csproj": {
+                "projectPath": "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.VO\\JohnService.VO.csproj"
               }
             }
           }
@@ -23,14 +23,36 @@
         "net472": {}
       }
     },
-    "C:\\Users\\isacs\\Source\\Repos\\isacscjrsenai\\JohnServices\\JohnService.View\\JohnService.View.csproj": {
+    "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.DAL\\JohnService.DAL.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.DAL\\JohnService.DAL.csproj",
+        "projectName": "JohnService.DAL",
+        "projectPath": "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.DAL\\JohnService.DAL.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.BO\\JohnService.BO.csproj": {
+                "projectPath": "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.BO\\JohnService.BO.csproj"
+              },
+              "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.VO\\JohnService.VO.csproj": {
+                "projectPath": "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.VO\\JohnService.VO.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.View\\JohnService.View.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\isacs\\Source\\Repos\\isacscjrsenai\\JohnServices\\JohnService.View\\JohnService.View.csproj",
+        "projectUniqueName": "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.View\\JohnService.View.csproj",
         "projectName": "JohnService.View",
-        "projectPath": "C:\\Users\\isacs\\Source\\Repos\\isacscjrsenai\\JohnServices\\JohnService.View\\JohnService.View.csproj",
+        "projectPath": "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.View\\JohnService.View.csproj",
         "packagesPath": "C:\\Users\\isacs\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\isacs\\Source\\Repos\\isacscjrsenai\\JohnServices\\JohnService.View\\obj\\",
+        "outputPath": "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.View\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,8 +74,11 @@
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "C:\\Users\\isacs\\Source\\Repos\\isacscjrsenai\\JohnServices\\JohnService.BO\\JohnService.BO.csproj": {
-                "projectPath": "C:\\Users\\isacs\\Source\\Repos\\isacscjrsenai\\JohnServices\\JohnService.BO\\JohnService.BO.csproj"
+              "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.BO\\JohnService.BO.csproj": {
+                "projectPath": "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.BO\\JohnService.BO.csproj"
+              },
+              "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.DAL\\JohnService.DAL.csproj": {
+                "projectPath": "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.DAL\\JohnService.DAL.csproj"
               }
             }
           }
@@ -67,6 +92,12 @@
       "frameworks": {
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -90,11 +121,11 @@
         }
       }
     },
-    "C:\\Users\\isacs\\Source\\Repos\\isacscjrsenai\\JohnServices\\JohnService.VO\\JohnService.VO.csproj": {
+    "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.VO\\JohnService.VO.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\isacs\\Source\\Repos\\isacscjrsenai\\JohnServices\\JohnService.VO\\JohnService.VO.csproj",
+        "projectUniqueName": "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.VO\\JohnService.VO.csproj",
         "projectName": "JohnService.VO",
-        "projectPath": "C:\\Users\\isacs\\Source\\Repos\\isacscjrsenai\\JohnServices\\JohnService.VO\\JohnService.VO.csproj",
+        "projectPath": "C:\\Users\\isacs\\source\\repos\\isacscjrsenai\\JohnServices\\JohnService.VO\\JohnService.VO.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}

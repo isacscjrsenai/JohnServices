@@ -30,6 +30,7 @@
         {
             txtServiceOrder = new TextBox();
             label1 = new Label();
+            btnRecord = new Button();
             SuspendLayout();
             // 
             // txtServiceOrder
@@ -37,7 +38,7 @@
             txtServiceOrder.Location = new Point(12, 64);
             txtServiceOrder.Multiline = true;
             txtServiceOrder.Name = "txtServiceOrder";
-            txtServiceOrder.Size = new Size(776, 354);
+            txtServiceOrder.Size = new Size(776, 315);
             txtServiceOrder.TabIndex = 0;
             // 
             // label1
@@ -50,11 +51,22 @@
             label1.TabIndex = 1;
             label1.Text = "Ordem de Serviço";
             // 
+            // btnRecord
+            // 
+            btnRecord.Location = new Point(403, 408);
+            btnRecord.Name = "btnRecord";
+            btnRecord.Size = new Size(75, 23);
+            btnRecord.TabIndex = 2;
+            btnRecord.Text = "Gravar";
+            btnRecord.UseVisualStyleBackColor = true;
+            btnRecord.Click += btnRecord_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnRecord);
             Controls.Add(label1);
             Controls.Add(txtServiceOrder);
             Name = "Form1";
@@ -68,5 +80,6 @@
 
         private TextBox txtServiceOrder;
         private Label label1;
+        private Button btnRecord;
     }
 }
